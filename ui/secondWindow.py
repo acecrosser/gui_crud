@@ -17,44 +17,62 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(282, 326)
+        Form.resize(417, 302)
         self.widget = QWidget(Form)
         self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(11, 11, 258, 305))
-        self.verticalLayout = QVBoxLayout(self.widget)
-        self.verticalLayout.setObjectName(u"verticalLayout")
-        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.lineEdit = QLineEdit(self.widget)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.widget.setGeometry(QRect(10, 10, 397, 282))
+        self.gridLayout = QGridLayout(self.widget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.label = QLabel(self.widget)
+        self.label.setObjectName(u"label")
 
-        self.verticalLayout.addWidget(self.lineEdit)
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
 
-        self.lineEdit_2 = QLineEdit(self.widget)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
+        self.titleLine = QLineEdit(self.widget)
+        self.titleLine.setObjectName(u"titleLine")
 
-        self.verticalLayout.addWidget(self.lineEdit_2)
+        self.gridLayout.addWidget(self.titleLine, 0, 1, 1, 1)
 
-        self.lineEdit_3 = QLineEdit(self.widget)
-        self.lineEdit_3.setObjectName(u"lineEdit_3")
+        self.saveButton = QPushButton(self.widget)
+        self.saveButton.setObjectName(u"saveButton")
 
-        self.verticalLayout.addWidget(self.lineEdit_3)
+        self.gridLayout.addWidget(self.saveButton, 0, 2, 1, 1)
 
-        self.textEdit = QTextEdit(self.widget)
-        self.textEdit.setObjectName(u"textEdit")
+        self.label_3 = QLabel(self.widget)
+        self.label_3.setObjectName(u"label_3")
 
-        self.verticalLayout.addWidget(self.textEdit)
+        self.gridLayout.addWidget(self.label_3, 1, 0, 1, 1)
 
-        self.splitter = QSplitter(self.widget)
-        self.splitter.setObjectName(u"splitter")
-        self.splitter.setOrientation(Qt.Horizontal)
-        self.pushButton_2 = QPushButton(self.splitter)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.splitter.addWidget(self.pushButton_2)
-        self.pushButton = QPushButton(self.splitter)
-        self.pushButton.setObjectName(u"pushButton")
-        self.splitter.addWidget(self.pushButton)
+        self.priceLine = QDoubleSpinBox(self.widget)
+        self.priceLine.setObjectName(u"priceLine")
 
-        self.verticalLayout.addWidget(self.splitter)
+        self.gridLayout.addWidget(self.priceLine, 1, 1, 1, 1)
+
+        self.cancelButton = QPushButton(self.widget)
+        self.cancelButton.setObjectName(u"cancelButton")
+
+        self.gridLayout.addWidget(self.cancelButton, 1, 2, 1, 1)
+
+        self.label_2 = QLabel(self.widget)
+        self.label_2.setObjectName(u"label_2")
+
+        self.gridLayout.addWidget(self.label_2, 2, 0, 1, 1)
+
+        self.linkLine = QLineEdit(self.widget)
+        self.linkLine.setObjectName(u"linkLine")
+
+        self.gridLayout.addWidget(self.linkLine, 2, 1, 1, 1)
+
+        self.label_4 = QLabel(self.widget)
+        self.label_4.setObjectName(u"label_4")
+
+        self.gridLayout.addWidget(self.label_4, 3, 0, 1, 1)
+
+        self.textArea = QTextEdit(self.widget)
+        self.textArea.setObjectName(u"textArea")
+
+        self.gridLayout.addWidget(self.textArea, 3, 1, 1, 1)
 
 
         self.retranslateUi(Form)
@@ -64,7 +82,11 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
-        self.pushButton_2.setText(QCoreApplication.translate("Form", u"add", None))
-        self.pushButton.setText(QCoreApplication.translate("Form", u"cancel", None))
+        self.label.setText(QCoreApplication.translate("Form", u"\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435", None))
+        self.saveButton.setText(QCoreApplication.translate("Form", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
+        self.label_3.setText(QCoreApplication.translate("Form", u"\u0426\u0435\u043d\u0430", None))
+        self.cancelButton.setText(QCoreApplication.translate("Form", u"\u0417\u044b\u043a\u0440\u044b\u0442\u044c", None))
+        self.label_2.setText(QCoreApplication.translate("Form", u"\u0421\u0441\u044b\u043b\u043a\u0430", None))
+        self.label_4.setText(QCoreApplication.translate("Form", u"\u0422\u0435\u043a\u0441\u0442", None))
     # retranslateUi
 

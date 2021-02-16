@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>282</width>
-    <height>326</height>
+    <width>417</width>
+    <height>302</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,41 +16,66 @@
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>11</x>
-     <y>11</y>
-     <width>258</width>
-     <height>305</height>
+     <x>10</x>
+     <y>10</y>
+     <width>397</width>
+     <height>282</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QLineEdit" name="lineEdit"/>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="lineEdit_2"/>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="lineEdit_3"/>
-    </item>
-    <item>
-     <widget class="QTextEdit" name="textEdit"/>
-    </item>
-    <item>
-     <widget class="QSplitter" name="splitter">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Название</string>
       </property>
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="text">
-        <string>add</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string>cancel</string>
-       </property>
-      </widget>
      </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="titleLine"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="saveButton">
+      <property name="text">
+       <string>Сохранить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Цена</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QDoubleSpinBox" name="priceLine"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="cancelButton">
+      <property name="text">
+       <string>Зыкрыть</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Ссылка</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="linkLine"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Текст</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QTextEdit" name="textArea"/>
     </item>
    </layout>
   </widget>
