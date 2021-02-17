@@ -1,7 +1,9 @@
 class GuiCrudMaker:
 
-    from db import connect
-    cursor = connect.cursor()
+    def __init__(self):
+        from db import connect
+        self.connect = connect
+        self.cursor = connect.cursor()
 
     def create(self, data):
         add_data = ("INSERT INTO wish_list "
